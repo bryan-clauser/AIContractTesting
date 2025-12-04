@@ -1,0 +1,40 @@
+{
+  "version": "1.1.0",
+  "paths": {
+    "/widget": {
+      "GET": {
+        "response": {
+          "status": 200,
+          "schema": {
+            "id": "string",
+            "status": "string",
+            "amount": "string",
+            "reviewUrl": "string"
+          }
+        }
+      }
+    },
+    "/order": {
+      "GET": {
+        "response": {
+          "status": 200,
+          "schema": {
+            "orderId": "string",
+            "total": "number",
+            "currency": "string"
+          }
+        }
+      }
+    },
+    "/health": {
+      "GET": {
+        "response": {
+          "status": 200,
+          "schema": {
+            "status": "string"
+          }
+        }
+      }
+    }
+  }
+}

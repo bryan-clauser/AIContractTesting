@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "paths": {
+    "/widget": {
+      "GET": {
+        "response": {
+          "status": 200,
+          "schema": {
+            "id": "string",
+            "status": "string",
+            "amount": "number"
+          }
+        }
+      }
+    },
+    "/order": {
+      "GET": {
+        "response": {
+          "status": 200,
+          "schema": {
+            "orderId": "string",
+            "total": "number"
+          }
+        }
+      }
+    }
+  }
+}
